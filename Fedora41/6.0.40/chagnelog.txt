@@ -1,0 +1,6 @@
+・Fedora39以降でBUILDを実行させるためOS判定ロジックを追加
+・--with-libpcre2を指定している箇所にFedora39以降のOS判定ロジックを追加
+・%patch0 -p1が非推奨になったため修正
+　エラー文：%patchN is obsolete, use %patch N (or %patch -P N): %patch1 -p1
+・%setup0　がFedoraでは未定義であるため、幅広いディストリビューションで問題なく動作する（と聞いた）%setupへ書き換え
+・%if 0%{?build_java_gateway}配下のOS判定ロジックの中で、OpenJDK 17が推奨であることが確認できたため該当部分へのロジック追加
