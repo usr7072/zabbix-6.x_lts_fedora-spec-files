@@ -5,6 +5,8 @@ Fedora41にてテストしています。
 PIDファイルパスやらzabbix-agent.serviceなどを一部編集する必要があったりします。  
 結構こまかく設定を変えないと一発起動はしないかもしれません。  
 
+6.0.40からFedora39以降を意識した記述へ。
+
 
 We are testing on Fedora 41.  
 What I am doing is not necessarily correct. (I don't know what it means in many cases.) 
