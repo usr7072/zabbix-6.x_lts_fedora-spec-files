@@ -1,0 +1,7 @@
+・Patch行のコメントアウト
+　なんかzabbix6.0.0alpha5が必要だったりするみたいだけど全然読めないため（ファイルがダウンロード出来ない？）
+　必要なファイルが展開できず。コメントアウトで誤魔化す。
+・0%{?rhel} >= 6,7,8　の記述がある行にFedoraの条件を追記
+・%setup0 ⇒ %setup 0　エラー回避
+・%patch0 -p1　⇒　%patch -P 0　エラー回避
+　エラー文：%patchN is obsolete, use %patch N (or %patch -P N): %patch1 -p1
